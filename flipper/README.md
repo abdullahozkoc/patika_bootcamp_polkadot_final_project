@@ -47,12 +47,13 @@ To get started, follow these steps to set up your development environment:
    cargo contract instantiate --constructor new --args "false" --suri //Alice --salt $(date +%s)
 5. Interact with the contract:
 Once the smart contract is deployed, you can interact with it using the following commands:
-  . Get the current state using get():
+ - Get the current state using get():
    ````
-   cargo contract call --contract $INSTANTIATED_CONTRACT_ADDRESS --message get --suri //Alice --dry-run
-  . Flip the state using flip():
+    cargo contract call --contract $INSTANTIATED_CONTRACT_ADDRESS --message get --suri //Alice --dry-run
+  
+  - Flip the state using flip():
   ````
- cargo contract call --contract $INSTANTIATED_CONTRACT_ADDRESS --message flip --suri //Alice
+   cargo contract call --contract $INSTANTIATED_CONTRACT_ADDRESS --message flip --suri //Alice
 
    
 
