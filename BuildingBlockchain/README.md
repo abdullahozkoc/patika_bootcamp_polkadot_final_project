@@ -1,59 +1,79 @@
-#Building Blockchain with Substrate Node Template
+# Building a Blockchain with Substrate Node Template
 
-Since we have Rust installed, it is now time to build our own blockchain using Substrate and experiencing the powerful features it brings.
+In this guide, we will walk through the process of building and interacting with a blockchain using Substrate Node Template. We'll cover compiling and starting a substrate node, installing and starting the front-end template, transferring funds, and stopping the node.
 
-##Compile and starting a substrate node
+## Compile and Start a Substrate Node
 
-*1 We need to clone to be able to start a substrate node on our system.
-    
+1. Clone the Substrate Node Template repository:
+    ```
     git clone https://github.com/substrate-developer-hub/substrate-node-template
+    ```
 
-*2 Let’s change our directory and go inside the project that we’ve just cloned - 
-    
+2. Change to the cloned directory:
+    ```
     cd substrate-node-template
-*3 To start the node, we first need to build and compile this project
-    
+    ```
+
+3. Build and compile the project:
+    ```
     cargo build --release
+    ```
 
- *4 Now we will start the node with the following command 
+4. Start the node:
+    ```
+    ./target/release/node-template --dev
+    ```
 
-     ./target/release/node-template --dev
+## Install and Start Front-End Template
 
+Substrate provides a front-end template for interacting with the blockchain through a user interface.
 
-
-##Install and starting front-end template
-
-Substrate also has a front end template for the dashboard so you can interact with the node through a UI and not just through the terminal.
-For the front end, yarn and nodeJS are both required.
-
-*1 Check your nodejs and yarn versions
- 
+1. Check your Node.js and Yarn versions:
+    ```
     node --version
     yarn --version
-*2 We need to clone the project that has the code for the front-end template
-    
+    ```
+
+2. Clone the Substrate front-end template repository:
+    ```
     git clone https://github.com/substrate-developer-hub/substrate-front-end-template
+    ```
 
-
-*3 We now need to change our directory to the project we just cloned
-   
+3. Change to the cloned directory:
+    ```
     cd substrate-front-end-template
+    ```
 
-*4 Now we will install the project using yarn
-
+4. Install the project dependencies:
+    ```
     yarn install
+    ```
 
-*5 We just have to start the front end with the following command
-
+5. Start the front-end:
+    ```
     yarn start
+    ```
 
-http://localhost:8000/ will automatically be opened in your default browser once the front end starts, but you can also open it manually. Now from the dashboard, you will be able to interact with the node.
+Access the dashboard at http://localhost:8000/ to interact with the node through the user interface.
 
-##Transfer Funds
-On the dashboard, you will notice the “balances” section, look at the balances of various users such as Dave, who have zero balance
+## Transfer Funds
 
-*1 Now we will try and transfer some money to Dave.
+1. Open the dashboard and navigate to the "balances" section.
 
-*2 Select dave from the list and transfer at least 1000000000000 to dave
+2. Select a user, e.g., Dave, and transfer funds to them by specifying the amount.
 
-*3 All we need to do is first check the balances table and see if the value was transferred to Dave
+3. Check the balances table to verify the transfer.
+
+## Stop Node
+
+To stop the local Substrate node:
+
+- Return to the terminal where the node is running.
+- Press Control-c to terminate the process.
+- Verify that the terminal returns to the substrate-node-template directory.
+
+---
+
+Feel free to explore and experiment with your Substrate-based blockchain!
+
+For screenshots and visual guidance, refer to the [BuildingBlockchain](https://github.com/abdullahozkoc/patika_bootcamp_polkadot_final_project/tree/main/BuildingBlockchain) directory in the repository.
