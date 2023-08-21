@@ -8,5 +8,5 @@ This repo was created for the Polkadot- Substrate Development Bootcamp final pro
 
 ## 3. Adding trusted nodes to a network.  (to be uploaded tomorrow)
 
-## 4. [Smart contracts](https://github.com/abdullahozkoc/patika_bootcamp_polkadot_final_project/tree/main/flipper) 
+## 4. [Smart contracts](https://github.com/abdullahozkoc/patika_bootcamp_polkadot_final_project/tree/main/flipper)  
   
